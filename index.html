@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMMY EXAM</title>
+    <link rel=" icon" href="./image/logo.png" >
+    <!-- ---------------------css start------------------------------------ -->
+   <!-- --------------------font awesome------------------------------- -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- ------------------------bootstrap-------------------------- -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ---------------------------main css-------------------------------- -->
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    
+</head>
+
+<body>
+<!-- -------------------------loading start-------------------------------------------- -->
+    <div class="loading position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <div class="min-vh-100 position-relative">
+        <div class="iner-loading ">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+<!-- -------------------------loading end-------------------------------------------- -->
+
+    
+
+    <div class="navbar-menu min-vh-100 position-fixed d-flex top-0">
+        <div class="navbar-point d-flex flex-column min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="showSearch(); closeNavbar()" class="py-2 position-relative cursor-pointer">Search</li>
+                    <li onclick="getCategory(); closeNavbar()" class="py-2 position-relative cursor-pointer">Categories</li>
+                    <li onclick="getArea(); closeNavbar()" class="py-2 position-relative cursor-pointer">Area</li>
+                    <li onclick="getIngredients(); closeNavbar()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+                    <li onclick="showContacts(); closeNavbar()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <div class="footer">
+                    <p>Copyright A© 2019 All Rights </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  -->
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-black text-white">
+            <img class="logo" src="./image/logo.png" alt="" >
+            <h6 class="logo-name text-white">Yummy</h6>
+            <i class="fa-solid switch-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block text-white"></i>
+                <i class="fa-solid fa-share-nodes text-white"></i>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container w-75" id="containerSearch">
+       
+    </div>
+
+        <div class="container">
+            <div class="row py-5 g-4 " id="dataRow">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+
+
+<!-- --------------------------javascript start-------------------------------- -->
+
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/index.js"></script>
+ <!-- --------------------------javascript end--------------------------------- -->
+</body>
+
+</html>
